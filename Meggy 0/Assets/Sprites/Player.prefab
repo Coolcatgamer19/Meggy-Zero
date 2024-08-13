@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 430022414414863604}
   - component: {fileID: 430022414414863605}
   - component: {fileID: 430022414414863600}
+  - component: {fileID: 7254286782998703882}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -148,13 +149,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fbeb5ee22f5987469e9568cd07df3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WalkSpeed: 20
-  RunSpeed: 0
+  Speed: 0
+  runSpeed: 0
+  walkSpeed: 0
   JumpForce: 0
+  Health: 100
+  Body: {fileID: 0}
+  animator: {fileID: 0}
   controller: {fileID: 430022414414863600}
+  Score: {fileID: 0}
+  Purple: {fileID: 0}
+  Doge: {fileID: 0}
+  Money: {fileID: 0}
+  FishEggs: {fileID: 0}
+  ScoreFloat: 0
+  idleA: 0
   horizontalMove: 0
   Jumping: 0
   crouch: 0
+  timer: 400
+  togle: 0
+  EscapeTogle: 0
+  pauseMenu: {fileID: 0}
+  Gun: 0
+  Hammer: 0
+  BulletSpawn: {fileID: 0}
+  Bullet: {fileID: 0}
+  BulletSpeed: 0
 --- !u!114 &430022414414863605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +217,20 @@ MonoBehaviour:
   OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7254286782998703882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430022414414863602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da0216b24cb87e4fbbc33225660c88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EscapeTogle: 0
+  pauseMenu: {fileID: 0}
 --- !u!1 &430022415141120849
 GameObject:
   m_ObjectHideFlags: 0
